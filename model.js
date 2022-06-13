@@ -3,7 +3,7 @@ let mongoose = require('mongoose');
 
 // Loading application configuration.
 const configs = require('./configs.js').settings;
-
+ 
 mongoose.connect(configs.db_url + configs.db_name, {useNewUrlParser: true, useUnifiedTopology: true});
 
 // The structure of the `users` collection. This is the Schema of users collection.
