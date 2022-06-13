@@ -1,0 +1,36 @@
+extends layout
+block CustomsCSS
+       link(rel='stylesheet', href='/stylesheets/signin.css')
+block content
+        <main class="form-signin" style="text-align: center!important;">
+        <form method="POST" action="/login">
+        <img class="mb-4" src="/images/logo.png" alt="" width="125" height="110">
+        h1(class='h3 mb-3 fw-normal')= title
+        if show_error !=""
+            <div class="alert alert-warning">
+            <strong>Error:</strong>
+            ul
+            each val in errors
+             li= val.param + ': ' + val.msg
+            </div>
+        <div class="form-floating">
+        <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating">
+        <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+        </div>
+
+        <div class="checkbox mb-3">
+        <label>
+        <input type="checkbox" value="remember-me"> Remember me
+        </label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+        <h2 class="h3 mb-1 fw-normal mt-4">Or</h2>
+        <div class="row mt-4 mb-1"><div class="col"><a href="/register" class="mt-3 mb-2">Register</a></div></div>
+        <p class="mt-4 mb-3 text-muted">&copy; 2017–2022</p>
+        </form>
+        </main>
+   

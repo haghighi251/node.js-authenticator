@@ -1,0 +1,16 @@
+extends layout
+
+block content
+        h1= title
+        p Welcome to #{title}
+        <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page"><a href="/">Home</a></li>
+        <li class="breadcrumb-item " >
+        a(class='', href='/users') Profile
+        </li>
+        </ol>
+        </nav>
+        <p>Hi #{user}</p>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
+   
