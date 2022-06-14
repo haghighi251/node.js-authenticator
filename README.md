@@ -1,5 +1,5 @@
 # node.js-authenticator
-User registration, login, dashboard by Node.js and Bootstrap 5.2 .
+User registration, login and dashboard by Node.js and Bootstrap 5.2 .
 
 In this plugin you will how you can use Node.js for user authentication. Bootstrap 5 is used in this project. 
 For the database, MongoDB has been used. 
