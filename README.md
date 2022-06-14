@@ -5,9 +5,11 @@ In this plugin you will how you can use Node.js for user authentication. Bootstr
 For the database, MongoDB has been used. 
 
 To see the home page of the application you just need to run the command below: 
+
 npm start
 
 After this command, You can use the URL below for seeing the first page: 
+
 http://localhost:3000
 
 Now, You can see the login form. The login form is showing because there is no user’s session. 
